@@ -1,0 +1,34 @@
+
+<mat-toolbar>
+  <button (click)="createTask()" class="add_btn" mat-raised-button color="primary">Add Task</button>
+</mat-toolbar>
+
+<div class="container-fuild task_tabel_wrapper" >
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th> Name</th>
+        <th> Email</th>
+        <th> Phone</th>
+        <th>Designation</th>
+        <th> In/out Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let empData of emplist" >
+        <td>{{empData.emp_name}}</td>
+        <td>{{empData.emp_email}}</td>
+        <td>{{empData.emp_phone}}</td>
+        <td>{{empData.emp_position}}</td>
+        
+        <td *ngIf="empData.emp_status === 1"  >
+          <button class="true_status" mat-mini-fab color="primary"></button>
+        </td>
+
+        <td *ngIf="empData.emp_status === 0"  >
+          <button class="false_status_btn" mat-mini-fab ></button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

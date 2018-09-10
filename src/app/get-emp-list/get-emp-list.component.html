@@ -1,0 +1,38 @@
+
+<mat-toolbar>
+  <button (click)="createTask()" class="add_btn" mat-raised-button color="primary">Add Task</button>
+</mat-toolbar>
+
+<div class="container-fuild task_tabel_wrapper" >
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th> Name</th>
+        <th> Email</th>
+        <th> Phone</th>
+        <th>Designation</th>
+        <th> Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let empData of emplist" >
+        <td>{{empData.emp_name}}</td>
+        <td>{{empData.emp_email}}</td>
+        <td>{{empData.emp_phone}}</td>
+        <td>{{empData.emp_position}}</td>
+
+        <td> <section class="example-section">
+          <mat-slide-toggle
+              class="example-margin"
+              [color]="color"
+              [(ngModel)]=empData.emp_status 
+              [checked]="checked"
+              [disabled]="disabled"
+               (change)="ChangeStatus($event,empData.emp_id)">
+          </mat-slide-toggle>
+        </section>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

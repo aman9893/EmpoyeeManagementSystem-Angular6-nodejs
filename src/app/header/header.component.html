@@ -1,0 +1,36 @@
+<mat-toolbar color="primary">
+<mat-toolbar-row>
+  <span>TEST  APPLICATION</span>
+  <span class="example-spacer"></span>
+
+  <!-- <ul class="top_navigation" id="header_menu_links_navigation">
+    <li matTooltipClass="header_tooltip" matTooltip="Add">
+      <button mat-icon-button [matMenuTriggerFor]="componentmenu">
+        <i class="material-icons">add</i>
+      </button>
+      <mat-menu #componentmenu="matMenu" xPosition="after" yPosition="above" [overlapTrigger]="false">
+        <button mat-menu-item >
+          <mat-icon>account_circle</mat-icon>New Task</button>
+      </mat-menu>
+    </li>
+    <li matTooltipClass="header_tooltip" matTooltip="mail task">
+      <button mat-icon-button >
+        <i class="material-icons">mail_outline</i>
+      </button>
+    </li>
+    <li matTooltipClass="header_tooltip" matTooltip="Task Date">
+      <button mat-icon-button >
+        <i class="material-icons">date_range</i>
+      </button>
+    </li>
+    </ul> -->
+<mat-icon class="icon_value">person</mat-icon>
+  <span  routerLinkActive="active" routerLink="/admin" class="icon_text"> Admin </span>
+
+
+  <mat-icon class="icon_value">laptop</mat-icon>
+  <span  routerLinkActive="active" routerLink="/login" class="icon_text"> Logout </span>
+
+</mat-toolbar-row>
+
+</mat-toolbar>

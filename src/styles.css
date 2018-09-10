@@ -1,1 +1,131 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+body{
+  margin: auto;
+  padding: auto;
+}
+.icon_value{
+    float: left;
+    cursor: pointer;
+  }
+  .icon_text{
+    float: left;
+    padding: 5px;
+    cursor: pointer;
+    outline: none;
+  }
+  .login_window {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 101px;
+  }
+
+  .login_window_wrapper{
+     
+  }
+  .form_container{
+    width: 100%;
+  }
+  .form_container_wrapper{
+
+  }
+  .form_container_btn_wrapper{
+    text-align: center;
+  }
+  .change_company_header {
+    text-align: center;
+    padding: 18px;
+    font-family: sans-serif;
+    font-size: 22px;
+    background: #c5cae933;
+    font-weight: bold;
+  }
+  .change_company_header span{
+    color: #3f51b5;
+  }
+  .register_text{
+    text-align: center;
+    background: #f4f5fb9c;
+    margin: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    outline: none;
+    padding: 10px;
+  }
+
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+
+.form_container_btn{
+  text-align: right;
+  outline: none;
+}
+.top_navigation li{
+  display: inline;
+  margin-right: 20px;
+  cursor: pointer;
+  height: 60px;
+  line-height: 55px;
+  position: relative;
+
+}
+
+.form_container_btn{
+  border: 1px solid;
+  padding: 8px;
+  padding-right: 17px;
+  cursor: pointer;
+  text-align: center;
+  outline: none;
+  padding-left: 21px;
+  margin-right: 10px;
+}
+.form_container_btn span:hover{
+  font-size: 17px;
+  cursor: pointer;
+}
+.icon_postion{
+  position: absolute;
+}
+.register_btn{
+  background: white;
+  border: none;
+  font-size: 15px;
+  color: black;
+}
+.form_container_btn_wrapper{
+  text-align: right;
+}
+
+.true_status{
+  color: green !important;
+  background: #09b109 !important;
+  height: 25px !important;
+  margin-left: 10px !important;
+  width: 25px !important;
+}
+.false_status_btn{
+  color: green !important;
+  background: #b10909 !important;
+  height: 25px !important;
+  margin-left: 10px !important;
+  width: 25px !important;
+}
+
+@media (min-width:320px)  { 
+  
+  
+  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+
+
+}
+@media (min-width:480px)  { /* smartphones, Android phones, landscape iPhone */ }
+@media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+@media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
