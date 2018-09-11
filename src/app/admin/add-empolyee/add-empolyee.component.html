@@ -1,0 +1,28 @@
+<div class="add_empolyee_form_wrapper">
+  <div class="form_header">
+         Add Empolyee
+  </div>
+  <div>
+    <mat-form-field  class="form_container">
+      <input matInput placeholder="Empolyee Name">
+    </mat-form-field>
+  
+    <mat-form-field  class="form_container">
+      <input matInput placeholder="Email">
+    </mat-form-field>
+    <mat-form-field  class="form_container">
+      <input matInput placeholder="Phone">
+    </mat-form-field>
+    <mat-form-field  class="form_container">
+      <input matInput placeholder="Designation">
+    </mat-form-field>
+    <mat-checkbox class="form_container">Status</mat-checkbox>
+
+  </div>
+  <div class="btn_empolyee">
+    
+      <button mat-raised-button  class="cancel_btn">Cancel</button>
+      <button mat-raised-button type="submit"  (click)="onSubmit()" class="save_btn">Save</button>
+  </div>
+
+</div>

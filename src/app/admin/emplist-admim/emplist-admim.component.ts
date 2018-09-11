@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MatTableDataSource, MatDialog, MatSnackBar } from '@angular/material';
 import { DataService } from '../../service/service';
 import { AddTaskComponent } from '../../add-task/add-task.component';
+import { AddEmpolyeeComponent } from '../../admin/add-empolyee/add-empolyee.component';
 
 @Component({
   selector: 'app-emplist-admim',
@@ -45,5 +46,30 @@ export class EmplistAdmimComponent implements OnInit {
   getEmpdataerror(error) {
     console.log("error")
   }
+
+  createEmpolyee(): void {
+    let dialogRef = this.dialog.open(AddEmpolyeeComponent, {
+      width: '500px',
+      height: 'auto',
+      data: '',
+      autoFocus: false
+    });
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(result);
+      // if (typeof result === 'object') {
+      //   if (result.status === true) {
+      //     var lastInsertedData = result.result[0];
+      //     console.log(lastInsertedData)
+      //     console.log(this.lossReasonData)
+      //     this.lossReasonData.push(lastInsertedData);
+      //     console.log(this.lossReasonData)
+      //     // let message = "contact Type Data Created Succesfully."
+      //     this.openSnackBar(result.message, 'Dissmiss')
+      //   }
+      // }
+    });
+  }
+}
+
 
 }

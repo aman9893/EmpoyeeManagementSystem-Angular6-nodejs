@@ -31,15 +31,15 @@ export class AddTaskComponent implements OnInit {
       task_details: new FormControl(),
       task_time: new FormControl(),
       status: new FormControl()
-    )};
+    });
+  }
 
   getError() {
-    return ' *This is required feild'
+    return ' *This is required feild';
   }
   cancel(): void {
     this.taskForm.reset();
     this.dialogRef.close();
-    
   }
 
   onSubmit() {
@@ -49,12 +49,13 @@ export class AddTaskComponent implements OnInit {
       this.dataService.postTask(this.taskForm.value).subscribe(
         data => this.closeDialog(data),
         err => console.log(err)
-      )}
+      )
+    
+    }
   }
 
   closeDialog(data) {
     this.dialogRef.close(data);
    
   }
-
 }

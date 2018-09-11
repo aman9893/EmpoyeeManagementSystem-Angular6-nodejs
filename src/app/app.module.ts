@@ -22,6 +22,7 @@ import { GetEmpListComponent } from './get-emp-list/get-emp-list.component';
 import { DeleteEmpListComponent } from './delete-emp-list/delete-emp-list.component';
 import { EmplistAdmimComponent } from './admin/emplist-admim/emplist-admim.component';
 import { AdminDashbordComponent } from './admin/admin-dashbord/admin-dashbord.component';
+import { AddEmpolyeeComponent } from './admin/add-empolyee/add-empolyee.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,6 +40,7 @@ import { AdminDashbordComponent } from './admin/admin-dashbord/admin-dashbord.co
     DeleteEmpListComponent,
     EmplistAdmimComponent,
     AdminDashbordComponent,
+    AddEmpolyeeComponent,
   ],
   
   imports: [
@@ -51,6 +53,7 @@ import { AdminDashbordComponent } from './admin/admin-dashbord/admin-dashbord.co
   bootstrap: [AppComponent],
   entryComponents: [ 
     AddTaskComponent,
-    DeleteTaskComponent]
+    DeleteTaskComponent,
+    AddEmpolyeeComponent]
 })
 export class AppModule { }

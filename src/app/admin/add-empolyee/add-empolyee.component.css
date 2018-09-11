@@ -1,0 +1,36 @@
+.add_empolyee_form_wrapper{
+float: left;
+width: 100%;
+}
+.form_container{
+    width: 47%;
+    float: left;
+    margin: 0px;
+    margin-left: 8px;
+}
+.btn_empolyee{
+    float: left;
+    width: 100%;
+    text-align: right;
+
+}
+.cancel_btn{
+    margin: 10px;
+    color: white;
+    background: #212529b3;
+    font-weight: bold;
+}
+.save_btn{
+    margin: 0px;
+    color: white;
+    font-weight: bold;
+    background: #3f51b5;
+}
+.form_header{
+    padding: 17px;
+    background: #e9ecef;
+    color: #212529;
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 27px;
+}
