@@ -23,6 +23,8 @@ import { DeleteEmpListComponent } from './delete-emp-list/delete-emp-list.compon
 import { EmplistAdmimComponent } from './admin/emplist-admim/emplist-admim.component';
 import { AdminDashbordComponent } from './admin/admin-dashbord/admin-dashbord.component';
 import { AddEmpolyeeComponent } from './admin/add-empolyee/add-empolyee.component';
+import { AuthService } from '../app/authservice';
+import { AuthGuard } from './auth.guard';
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,16 +44,15 @@ import { AddEmpolyeeComponent } from './admin/add-empolyee/add-empolyee.componen
     AdminDashbordComponent,
     AddEmpolyeeComponent,
   ],
-  
   imports: [
     MaterialModule,ROUTING,BrowserAnimationsModule,
     BrowserModule, HttpClientModule,
     FormsModule ,
     ReactiveFormsModule,
   ],
-  providers: [DataService],
+  providers: [DataService,AuthService],
   bootstrap: [AppComponent],
-  entryComponents: [ 
+  entryComponents: [
     AddTaskComponent,
     DeleteTaskComponent,
     AddEmpolyeeComponent]
